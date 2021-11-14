@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <style>
+            p {
+              text-align: center;
+              font-family:'Courier New', Courier, monospace;
+              font-size: 12vw;
+              font-weight: 500;
+              margin-top: 0vh;
+              z-index: 2;
+              margin-bottom: 0px;
+              
+            }
+            h1 {
+                text-align:center;
+                margin-bottom: 0px;
+                font-size: 6vw;
+                font-family: 'Brush Script MT';
+                z-index: 2;
+            }
+            h2 {
+                text-align:center;
+                margin-top: 0px;
+                font-size: 10vw;
+                font-family: 'Brush Script MT';
+                z-index: 2;
+                margin-bottom: 3vw;
+            }
+            #signs {
+                text-align: center;
+                font-size: 4vw;
+                letter-spacing: 17vw;
+                margin-top: 0vh;
+                padding-left: 17vw;
+                padding-bottom: 1vw;
+                margin-bottom: 0px;
+                z-index: 2;
+            }
+            html {
+                background-color: rgb(217, 12, 45);
+                z-index: 0;
+            }
+            #tree {
+                position:absolute;
+                width: 8vw;
+                height: 11vw;
+                top: 1vh;
+                z-index: 1;
+            }
+            .back {
+                background-color: rgb(0, 149, 67);
+            }
+            #back {
+                text-align: center;
+                margin-bottom: 0px;
+                width: 100%;
+                height: auto;
+            }
+            #back2 {
+                text-align: center;
+                margin-bottom: 0px;
+                width: 100%;
+                height: auto;
+            }
+            #back3 {
+                text-align: center;
+                margin-bottom: 0px;
+                width: 100%;
+                height: auto;
+                margin-bottom: 18vh;
+            }
+            #hosted1 {
+                position: absolute;
+                margin-top: 0px;
+                padding-left: 15vw;
+                padding-right: 30vw;
+            }
+            #made1 {
+                position: absolute;
+                margin-top: 0px;
+                padding-left: 15vw;
+                padding-right: 13vw;
+                margin-left: 45vw;
+            }
+            #made2 {
+                position: absolute;
+                padding-left: 62vw;
+                padding-right: 18vw;
+                margin-top: 7vw;
+                font-size: 6vw;
+            }
+            #hosted2 {
+                position: absolute;
+                padding-left: 12vw;
+                margin-top: 7vw;
+                font-size: 6vw;
+            }
+            .credits {
+                background-color: rgb(0, 149, 67);
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Countdown To Christmas</h1>
+        <h2>2022!</h2>
+        <img src="slide.png" id=back>
+        <p id="signs" class="back">DHMS</p>
+        <img src='tree_symbol.png' id="tree">
+        
+        
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <p id="demo" class="back"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if (days < 10) {
+            days = "0" + days
+        }
+
+        if (hours < 10) {
+            hours = "0" + hours
+        }
+
+        if (minutes < 10) {
+            minutes = "0" + minutes
+        }
+
+        if (seconds < 10) {
+            seconds = "0" + seconds
+        }
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + ":" + hours + ":"
+        + minutes + ":" + seconds;
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+        </script>
+        <img src="slide2.png" id=back2>
+
+        <!------------------------------------------------------------------------------------------->
+
+        <h1>Countdown To Christmas</h1>
+        <h2>2023!</h2>
+        <img src="slide.png" id=back>
+        <p id="signs" class="back">DHMS</p>
+
+        <p id="demo2" class="back"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate2 = new Date("Jan 1, 2023 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now2 = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance2 = countDownDate2 - now2;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+        var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+
+        if (days2 < 10) {
+            days2 = "0" + days2
+        }
+
+        if (hours2 < 10) {
+            hours2 = "0" + hours2
+        }
+
+        if (minutes2 < 10) {
+            minutes2 = "0" + minutes2
+        }
+
+        if (seconds2 < 10) {
+            seconds2 = "0" + seconds2
+        }
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("demo2").innerHTML = days2 + ":" + hours2 + ":"
+        + minutes2 + ":" + seconds2;
+            
+        // If the count down is over, write some text 
+        if (distance2 < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+        </script>
+
+        <img src="slide2.png" id=back3>
+
+        <img src="slide.png" id=back>
+
+        <h1 id=hosted1 class=credits>Hosted With:</h1>
+        <h1 id=made1 class=credits>Made by:</h1>
+        <a href="https://github.com/Mateo2203"><h1 id=made2 class=credits>Mateo</h1></a>
+        <a href="https://pages.github.com"><h1 id=hosted2 class=credits>GitHub Pages</h1></a>
+    </body>
+</html>
